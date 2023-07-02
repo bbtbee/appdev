@@ -1,0 +1,41 @@
+<link rel="stylesheet" href="{{ url_for('static', filename='design.css') }}">
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/">Clothes2Day</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="/">Home</a>
+            </li>
+        <li class="nav-item dropdown">
+         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Manage Users</a>
+           <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="/createUser">Sign up</a></li>
+            <li><a class="dropdown-item" href="/loginUser">Login in</a></li>
+            <li><a class="dropdown-item" href="/retrieveUsers"User List</a></li>
+            <li><a class="dropdown-item" href="/loginAdmin">Admin Login</a></li>
+          </ul>
+        </li>
+        </li>
+          <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Manage Orders</a>
+          <ul class="dropdown-menu">
+           <li><a class="dropdown-item" href="/createUserOrder">Create Order</a></li>
+           <li><a class="dropdown-item" href="/retrieveUserOrder">Retrieve Users</a></li>
+           </ul>
+         </li>
+         <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Manage Customer Orders</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="/createCustomerOrder">Create Order</a></li>
+            <li><a class="dropdown-item" href="/retrieveCustomerOrder">Retrieve Orders</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

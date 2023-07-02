@@ -1,0 +1,79 @@
+{% extends "base.html" %}
+{% block title %}User data{% endblock %}
+{% block content %}
+<div class="content">
+    <img src="images/background.jpg">
+    <div class="text-wrap">
+    <div class="text">
+        <h1 class="display-4">Shopping page</h1>
+        <div>
+            login successful
+        </div>
+        <div>
+            <span>Pick one of the categories below</span>
+            <hr>
+            <table>
+                <tr>
+                    <td>
+                        <div class="clothes"><a href="/men">Men</a></div>
+                    </td>
+                    <td>
+                        <div class="clothes"><a href="/women">Women</a></div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div>{{user}}</div>
+    </div></div>
+
+</div>
+
+<style>
+
+body {
+margin:0;
+}
+
+img{
+    width:100%;
+    opacity:70%;
+}
+
+div.clothes {
+    border:1px solid black;
+    border-radius:8px;
+    background-color: rgba(0,0,0,0.3);
+    padding:5px;
+    color: white;
+    font-size: 2em;
+}
+a{
+    color:white;
+    text-decoration: none;
+    font-weight: semi-bold;
+}
+
+div.content {
+  position:relative;
+}
+
+div.text {
+  position: absolute;
+
+  top:200px;
+  right:20px;
+  color:white;
+  padding-left:20px;
+  padding-right:20px;
+  background-color: rgba(0,0,0,0.5)
+  }
+
+table {margin-left:auto;
+margin-right:auto;
+margin-bottom:40px;}
+
+td {padding:40px;}
+
+</style>
+
+{% endblock %}
